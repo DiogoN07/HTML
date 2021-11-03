@@ -1,0 +1,60 @@
+Css
+Aplicado:
+Inline-atributo style
+Interno-dentro da tag <head>:tag style:
+<style>
+
+selector
+
+</style>
+
+Externo:Ficheiro com extensão .css usa-lo no documento atraves do <link ref="stylesheet" href="___">
+
+<p class="ex" id="idP">...</p>
+
+combinação:
+-p.ex{}
+-p#idP{}
+
+Agrupamento:
+h1,#goals, .ex{...}
+
+Descendemte:
+div |_| p{...}
+    le-se sempre da direita para a esquerda
+
+p.ex{...}-seleciona todos os paragrafos com class="ex"
+p|_|.ex{...}-seleciona todos os elementos com class ="ex que estão dentro de parágrafos" <p>
+                                                                                          texto <a href="..." class="ex"
+                                                                                          </a)
+                                                                                          </p>
+
+Pseudo-classes
+
+selector:hover{...}
+
+a|:link{...}
+ |:visited{...}
+ |:active{...}	
+
+Pseudo elementos:
+p{:first-letter{}
+h1{
+
+float-flutuar esq./dir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                      

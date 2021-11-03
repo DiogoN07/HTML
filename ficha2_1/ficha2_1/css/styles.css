@@ -1,0 +1,272 @@
+body{
+    font-family: Arial;
+    font-size: 11pt;
+    width: 1000px;
+    
+    /*Margem esq. e dir. com valor auto faz com que elemento
+    fique centrado horizontamente dentro da área onde se encontra
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ou
+    margin: 10px auto 10px auto;
+             t    r    b     l
+    ou
+    */
+    margin: 10px auto;
+           /*tb   lr*/
+           color:#242424;
+           background: url(../img/bg3.png) repeat-x;
+           
+}
+
+header {
+    height: 120px; 
+    /*
+    background-image: url(../img/banner_top.jpg);   
+    background-repeat: repeat-x; 
+    ou */
+   
+    line-height: 120px;
+    position:relative;
+}
+header h1{
+    font-size: 200%;
+    color:white;
+    text-align:center;
+    display:block;
+    padding-left: 0px;
+}
+#logo img{
+    height: 140px;
+    top:-15px;
+    left: 40px;
+    position:absolute;
+}
+nav {
+
+border-bottom: 2px solid black;
+}
+nav ul{
+    list-style-type: none;
+    margin-left: 15px;
+    padding: 0;
+    text-align: center;
+}
+nav li{
+    margin-top: 10px;
+    /*border-bottom: 2px solid #800000;*/
+    border:2px solid color#4D7E00;
+    border-radius:5px;
+    height: 35px;
+    line-height: 35px;
+    display:inline-block;
+    margin: 0 5px 0 5px;
+    width: 150px;
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    display: block;
+}
+nav li.sel,nav li.hover{
+    font-size:110%;
+    background-color:#4D7E00;
+}
+nav li.sel a,nav li.hover a{
+    color:white
+}
+#main {   
+ 
+    margin: 0;
+    padding: 5px 10px 2px 3px;
+    /* if browser does not support calc() */
+ ;
+    font-size: 110%;
+    line-height: 130%;
+}
+.emph{
+    font-weight: bolder;
+}
+h2,h3{
+    text-align:center;
+    text-decoration: underline;
+    font-size: 150%;
+    color:#666600;
+}
+#main a{
+    text-decoration: none;
+    color:#666600;
+}
+ #main a:hover{
+    text-decoration: underline;
+}
+#main p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding: 0;
+}
+#main div{
+    margin-left: 15px;
+}
+#main ul{
+    list-style-type: circle;
+    margin-left: 60px;
+    padding: 0;
+}
+/*
+#goals {
+   
+}
+
+#learningOut {
+    
+}*/
+
+footer {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #804000;
+}
+footer a{
+    color:black;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+table{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+    height: 30px;
+    padding-left: 5px;
+}
+tbody tr:nth-child(odd){
+    background-color: #FFF1DD;
+}
+tbody tr:nth-child(even){
+    background-color: white;
+}
+td[rowspan]{
+    background-color: #FF8000;
+    text-align: center;
+    font-weight: bolder;
+}
+td[colspan]{
+    height: 2px;
+    background-color: #800000;
+}
+thead{
+    text-align: left;
+    color: white;
+    background-color: #800000;
+}
+#fsGInfo, #fsQuest{
+    border-width: 1px;
+    border-color: silver;
+    font-size:10pt;
+}
+#fsGInfo{
+    border-style: solid;
+    float: left;
+    width: 55%;
+    margin-left: 5%;
+}
+#fsQuest{
+    border-style: dotted;
+    float:right;
+    width: 30%;
+    margin-top: 9px;
+}
+#fsGInfo label{
+    display: block;
+    float:left;
+    height:24px;
+    line-height: 24px;
+    width: 135px;
+    text-align: right;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+#idName, #idEmail,#idPass, #idCPass{
+    height: 20px;
+}
+#idRegion{
+    height: 28px;
+}
+#fsGInfo input, #fsGInfo select{
+    display:block;
+    border: 1px solid black;
+    margin-top: 3px;
+}
+#idName, #idEmail, #idRegion{
+     width: 270px;
+}
+#idPass, #idCPass{
+    width: 150px;
+}
+#fsGender{
+    clear:both;
+    /*
+    border:0;
+    border-top: 3px double black;
+    ou*/
+    border-width: 3px 0 0 0;
+    border-style: double;
+    border-color: black;
+}
+#fsGender input{
+    height: 28px; 
+    float:left;
+    margin-left:30px;
+}
+#fsGender label{
+    height: 30px;
+    margin-top: 5px;
+    text-align: left;
+}
+#fsQuest p{
+    margin-left:0px;
+}
+#fsQuest input{
+    height:20px;
+    margin-left: 30px;
+    display: block;
+    float: left;
+}
+#fsQuest label{
+    display: block;
+    height: 30px;
+    margin-left: 45px;
+}
+#buttons{
+    clear: both;
+    text-align: center;
+}
+#buttons input {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 12pt;
+    display: inline-block;
+}
+#buttons input[type=submit]{
+    background-color: #666666;
+    color:white;
+}
+#buttons input[type=reset]{
+    background-color: silver;
+}
+

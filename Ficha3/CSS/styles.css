@@ -1,0 +1,288 @@
+    header {
+        height: 120px;
+        background-image: url(../img/banner_top.jpg);
+        background-repeat: repeat-x;
+        line-height: 120px;
+    }
+    
+    #logo img {
+        height: 110px;
+        margin-left: 40px;
+        float: left;
+    }
+    
+    header h1 {
+        font-size: 200%;
+        color: #004080;
+        display: inline;
+        padding-left: 50px;
+    }
+    
+    nav {
+        float: left;
+        width: 160px;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+
+    nav li{
+        margin-top: 10px;
+        /* border-bottom: 2px solid #800000; */
+        border-width:  0 0 2px 0;
+                    /* t r b   l  / t = top, r = right, b = bottom, l = left*/
+        border-style: solid;
+        border-color: #800000;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+    
+    nav li.sel{
+        font-size: 110%;
+        border-width: 0 4px 4px 0;
+        border-radius: 0 0 10px 0;
+                    /*tl tr br  bl  / tl = topleft, tr = topright, br = bottomright, bl = bottomleft*/
+        height: 33px;
+        line-height: 33px;
+    }
+
+    nav li:hover{
+        font-weight: bold;
+        border-width: 4px 4px 4px 0;
+        border-radius: 0 10px 10px 0;
+        background-color: #FFCC66;
+        height: 29px;
+        line-height: 29px;
+    }
+
+    section#main {
+        float: right;
+        margin: 0;
+        padding: 5px 10px 2px 3px;
+        width: 827px;
+        /* if browser does not support calc() */
+        width: calc(100% - 173px);
+        font-size: 110%;
+        line-height: 130%;
+    }
+    
+    .emph {
+        font-weight: bolder;
+    }
+    
+    h2, h3 {
+        text-decoration: underline;
+        font-size: 150% /* ou 1.5em */;
+        color: #ff7032;
+    }
+    
+    #main a {
+        text-decoration: none;
+    }
+    
+    #main a:hover {
+        text-decoration: none;
+    }
+
+    #main p{
+        text-align: justify;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 0;
+    }
+
+    #main div{
+        margin-left: 15px;
+    }
+
+    #main ul{
+        list-style-type: circle;
+        margin-left: 60px;
+        padding: 0;
+    }
+   
+    
+    footer {
+        height: 40px;
+        background-image: url(../img/banner_bottom.jpg);
+        background-repeat: repeat-x;
+        line-height: 40px;
+        text-align: center;
+        clear: both;
+        color: #804000;
+    }
+    
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+    body {
+        font-family: Arial;
+        font-size: 10px;
+        width: 1000px;
+        align-items: center;
+        margin: 10px auto;
+        /*  margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto; */
+    }
+    
+    img {
+        height: 110px;
+    }
+
+table{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    height: 30px;
+    padding-left: 5px;
+}
+
+tbody tr:nth-child(odd){ 
+    background-color: #fff1dd;
+}
+
+tbody tr:nth-child(even){
+    background-color: white;
+}
+
+td[rowspan]{
+    background-color: #ff8000;
+    text-align: center;
+    font-weight: bolder;
+}
+
+td[colspan]{
+    height: 2px;
+    background-color: #800000;
+}
+
+th{
+    text-align: left;
+    color: white;
+    background-color: #800000;
+}
+
+#fsGInfo, #fsQuest{
+    border-width: 1px;
+    border-color: silver;
+    font-size: 10px;
+}
+
+#fsGInfo{
+    border-style: solid;
+    float: left;
+    width: 55%;
+    margin-left: 5%;
+}
+
+#fsQuest{
+    border-style: dotted;
+    float: right;
+    width: 30%;
+    margin-top: 9px;
+}
+#buttons{
+    clear:both;
+}
+#fsGInfo label{
+    display:block;
+    float:left;
+    height: 24px;
+    width: 135px;
+    text-align:center;
+    line-height:24px;
+    margin-left:3px;
+    margin-right: 3px;
+    margin-top:3px; 
+}
+#buttons{
+    clear:both;
+}
+#name,#email,#password,#confpassword{
+    height:20px;
+}
+#region{
+    height:28px;
+}
+#fsGInfo input,#fsGInfo select{
+    display:block;
+    border:1px solid black;
+    margin-top:3px;
+}
+#name,#email,#region{
+    width: 270px;
+}
+#password,#confpassword{
+    width:150px;
+}
+#fsGender{
+    clear:both;
+    border:0;
+    border-top:3px double black;
+}
+#fsGender input{
+    height:28px;
+    float:left;
+    margin-left:30px;
+}
+#fsGender label{
+    height:30px;
+    margin-top:5px;
+    text-align:left;
+}
+#fsQuest p{
+    margin-left:0px;
+}
+#fsQuest input{
+    height:20px;
+    margin-left:30px;
+    display: block;
+    float:left;
+}
+#fsQuest label{
+    display:block;
+    height:30px;
+    margin-left:45px;
+}
+#buttons input{
+    margin-top:35px;
+    margin-bottom:30px;
+    width: 130px;
+    height: 35px;
+    border:2px
+}
+#buttons input{
+margin-top:35px;
+margin-bottom:30px;
+width:130px;
+height: 35px;
+border:2px solid black;
+border-radius:5px;
+font-size:12pt;
+display:inline-block;
+}
+#buttons input[type=submit]{
+    background-color: #666666;
+    color:white;
+}
+#buttons input[type=reset]{
+    background-color: silver;
+}

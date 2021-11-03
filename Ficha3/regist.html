@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header id="title">
+        <div id="logo">
+           <a href="index.html"><img src="img/logo.png" height="110px" alt=""> </a> 
+        </div>        
+
+        <h1>Games and Multimedia</h1>
+    </header>
+
+   <nav id="menu">
+        <ul>
+            <a href="index.html"><li>Goals</li></a>
+            <a href="index.html#learningOut"><li>Learning Outcomes</li></a>
+            <a href="curricularPlan.html"><li>Curricular Plan</li></a>
+            <a href="regist.html"><li class="sel">Registration</li> </a>
+        </ul>
+    </nav>    
+
+    <section id="main">
+    
+        <h2>Registration</h2>
+    <p>
+        Subscribe to receive more information about 
+       <span class="emph">"Games and Multimedia"</span>! 
+    </p>      
+
+        <form action="#" method="post">
+            <fieldset id="fsGInfo">
+                <legend>General Information</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confpassword">Confirm Password:</label>
+                <input type="password" id="confpassword" name="confpassword" required>
+
+                <label for="region">Region:</label>
+                <select name="region" id="region" required>
+                    <option value="N">North</option>
+                    <option value="C">Center</option>
+                    <option value="S">South</option>
+                    <option value="I">Islands</option>
+                    <option value="O">Other</option>
+                </select>
+                
+                <fieldset id="fsGender">
+                    <legend>Gender</legend>
+                    
+                    <input type="radio" id="male" name="Gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="Gender" value="female" required>
+                    <label for="female">Female</label>
+                    
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset id ="fsQuest">
+                <p>How did you hear about "Games and Multimedia"?</p>
+
+                <form>
+                    <input type="checkbox" id="col" name="col" required>
+                    <label for="col"> By colleagues</label>
+                    
+                    <input type="checkbox" id="news" name="news" required>
+                    <label for="news"> Newspapers and magazines</label>
+                    
+                    <input type="checkbox" id="internet" name="internet" required>
+                    <label for="internet"> Internet</label>
+
+                    <input type="checkbox" id="other" name="other" required>
+                    <label for="other"> Other</label>
+                </form>
+            </fieldset>   
+
+            <div id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset"> 
+            </div>                  
+
+        </form>
+    
+    </section>
+
+    <footer id="others">
+        <p>See <a href="curricularPlan.html">Curricular Plan</a> and fill out the <a href="regist.html">registration form</a> to 
+        recieve more infirmtion.</p>
+    </footer>
+</body>
+</html>
